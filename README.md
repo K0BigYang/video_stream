@@ -57,21 +57,21 @@ $ ffmpeg -f avfoundation -framerate 30 -i "{webcam id} or {video_path}" -s 1920x
 ## C. Capture the stream and Model Inference
 
 ```bash
-$ cd ~/lab4/
+$ cd ~/video_stream/
 $ python3 inference_2_server.py
 ```
 
 ## D. Make stream files of .m3u8 and .ts
 
 ```bash
-$ cd ~/lab4/video
+$ cd ~/video_stream/video
 $ python3 FFMPEG_Playlist.py —input_file rtmp://{server_ip}:9097/live/test
 ```
 
 ## E. Open FLASK Server
 
 ```bash
-$ cd ~/lab4/
+$ cd ~/video_stream/
 $ python3 app.py
 ```
 
